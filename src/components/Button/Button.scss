@@ -1,0 +1,28 @@
+@use "../../styles/typefaces" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+@use "../../styles/_mixins.scss" as *;
+@use "../../styles/_variables.scss" as *;
+
+.btn {
+  @include flex-center;
+
+  &:hover:enabled {
+    cursor: pointer;
+  }
+
+  &--secondary {
+    //secondary styles
+    &:hover:enabled {
+      background-color: inherit;
+    }
+  }
+
+  &__text-hide {
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+  }
+}
