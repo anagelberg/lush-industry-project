@@ -3,8 +3,17 @@
   src: url("../assets/fonts/Lush\ Handwritten\ WLat\ Bold.woff2")
       format("woff2"),
     url("../assets/fonts/Lush\ Handwritten\ WLat\ Bold.woff") format("woff"),
-    url("../assets/fonts/Lush\ Handwritten\ WLat\ Bold.woff2")
-      format("truetype");
+    url("../assets/fonts/Lush\ Handwritten\ WLat\ Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lush";
+  src: url("../assets/fonts/Lush.woff2") format("woff2"),
+    url("../assets/fonts/Lush.woff") format("woff"),
+    url("../assets/fonts/Lush.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
