@@ -3,10 +3,22 @@
 @use "../../styles/mixins" as *;
 
 .btn {
+  height: 48px;
+  width: 228px;
   @include flex-center;
+  border-radius: 0;
+  background-color: $black;
+  color: white;
+  border: 1px solid black;
+  font-size: 12px;
+  text-transform: uppercase;
+  //uppercase
+  $transition: $transition;
 
   &:hover:enabled {
     cursor: pointer;
+    background-color: white;
+    color: $black;
   }
 
   &--secondary {
