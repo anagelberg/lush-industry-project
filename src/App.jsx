@@ -4,7 +4,6 @@ function App() {
   return (
     <>
       <div>Hello</div>
-      <img src={testSVG} alt="" />
     </>
   );
 }

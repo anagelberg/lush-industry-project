@@ -2,9 +2,6 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-@use "../../styles/_mixins.scss" as *;
-@use "../../styles/_variables.scss" as *;
-
 .btn {
   @include flex-center;
 
