@@ -1,0 +1,56 @@
+@use "../../styles/typefaces" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.product {
+  //   height: 476.229px; if other features
+  height: 430px;
+  width: 232px;
+  @include flex-center($justify-content: flex-end);
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 14px;
+  border: 2px solid $white; //so doesn't shift
+  position: relative;
+
+  &__img {
+    height: 150px;
+    width: 150px;
+  }
+
+  &__type {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $empress;
+  }
+
+  &__name {
+    font-family: "Lush Handwritten WLat Bold";
+    font-size: 1.3125rem;
+
+    &:hover {
+      text-decoration: underline;
+      color: $dark-grey;
+      cursor: pointer;
+    }
+  }
+
+  &__cost {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &:hover {
+    border: 2px solid $med-grey;
+  }
+
+  &__heart {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

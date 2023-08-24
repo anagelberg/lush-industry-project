@@ -1,0 +1,45 @@
+@use "../../styles/typefaces" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.navbar {
+  background-color: black;
+  width: 100%;
+  @include side-padding;
+  height: $navbar-height;
+  @include padding-vertical;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+
+  &__logo {
+    height: 40px;
+    width: 100px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__search {
+    @include form-field;
+  }
+
+  &__top {
+    @include flex-center($justify-content: space-between);
+  }
+
+  &__bottom {
+    @include flex-center($justify-content: space-between);
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  &__icon {
+    height: 32px;
+    width: 32px;
+  }
+}
