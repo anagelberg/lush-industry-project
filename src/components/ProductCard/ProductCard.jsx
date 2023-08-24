@@ -1,6 +1,6 @@
 import "./ProductCard.scss";
 import heartIcon from "../../assets/icons/heart-dark.svg";
-
+// random test
 import Button from "../Button/Button";
 
 function ProductCard({ img, type, name, description, price, weight }) {
