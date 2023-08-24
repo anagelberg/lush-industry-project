@@ -1,0 +1,14 @@
+@use "./styles/typefaces" as *;
+@use "./styles/variables" as *;
+@use "./styles/mixins" as *;
+
+.examples {
+  @include flex-center;
+  flex-direction: column;
+}
+
+.example {
+  margin: auto;
+  @include side-padding;
+  margin: 5rem 0;
+}
