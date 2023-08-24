@@ -12,6 +12,11 @@ function App() {
         Example Button
         <Button text="Example Button" />
       </div>
+
+      <div className="example">
+        Example Product Card
+        <Button text="Example Button" />
+      </div>
     </>
   );
 }
