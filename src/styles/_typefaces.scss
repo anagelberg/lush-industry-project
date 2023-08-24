@@ -1,11 +1,32 @@
 @font-face {
   font-family: "Lush Handwritten WLat Bold";
-  src: url("../assets/fonts/Lush\ Handwritten\ WLat\ Bold.woff2")
-      format("woff2"),
-    url("../assets/fonts/Lush\ Handwritten\ WLat\ Bold.woff") format("woff"),
-    url("../assets/fonts/Lush\ Handwritten\ WLat\ Bold.woff2")
-      format("truetype");
+  src: url("../assets/fonts/LushHandwrittenWLatBold.woff2") format("woff2");
+  // url("../assets/fonts/Lush\ Handwritten\ WLat\ Bold.woff") format("woff"),
+  // url("../assets/fonts/Lush\ Handwritten\ WLat\ Bold.woff2")format(
+  //   "truetype"
+  // );
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../../src/assets/fonts/HelveticaNeue-CondensedBold.woff2")
+      format("woff2"),
+    url("../../src/assets/fonts/HelveticaNeue-CondensedBold.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../../src/assets/fonts/HelveticaNeue-ThinCond.woff2")
+      format("woff2"),
+    url("../../src/assets/fonts/HelveticaNeue-ThinCond.woff") format("woff");
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }

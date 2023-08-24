@@ -1,5 +1,5 @@
 import "./Navbar.scss";
-import logo from "../../assets/logo/Lush_logo_cropped.png";
+import logo from "../../assets/logo/logo.svg";
 import heart from "../../assets/icons/heart-light.svg";
 import shoppingCart from "../../assets/icons/shopping-cart.svg";
 

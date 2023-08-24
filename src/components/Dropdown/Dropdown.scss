@@ -1,0 +1,78 @@
+@use "../../styles/typefaces" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+/* Note for elise -- chatGpt did this */
+
+.dropdown {
+  margin-top: 0.5rem;
+  font-size: 16px;
+  border-top: 1px solid $black;
+  width: 200px;
+  overflow: hidden;
+
+  &__title {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.2rem;
+    @include flex-center($justify-content: space-between);
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    &--open {
+      max-height: 600px;
+      transition: max-height 0.5s;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  }
+
+  &__arrow {
+    width: 15px;
+    height: 8px;
+  }
+}
+
+/* Hide the original checkbox */
+.dropdown__item input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 1px solid black;
+  position: relative;
+}
+
+/* When the checkbox is checked, add a black background */
+.dropdown__item input[type="checkbox"]:checked {
+  background-color: black;
+  border: 1px solid black;
+}
+
+/* Create a checkmark using the ::after pseudo-element */
+.dropdown__item input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -60%) rotate(45deg);
+}
