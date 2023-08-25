@@ -11,10 +11,7 @@ function Scan() {
   return (
     <>
       <div className="webcam__container">
-        <Webcam
-          // onClick={() => setShowWebCam(false)}
-          videoConstraints={videoConstraints}
-        />
+        <Webcam videoConstraints={videoConstraints} />
       </div>
     </>
   );

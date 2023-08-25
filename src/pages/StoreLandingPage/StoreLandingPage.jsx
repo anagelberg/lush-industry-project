@@ -6,21 +6,10 @@ import Webcam from "react-webcam";
 import { useState } from "react";
 import Button from "../../components/Button/Button";
 
-// const videoConstraints = {
-//   facingMode: { exact: "environment" },
-// };
-
 function StoreLandingPage() {
-  //   const [showWebcam, setShowWebCam] = useState(false);
-
   return (
     <>
-      <Button
-        //   onClick={() => setShowWebCam(true)}
-
-        text="Scan item"
-      />
-      {/* <div className={showWebcam ? "webcam" : "webcam webcam--hidden"}></div> */}
+      <Button text="Scan item" />
     </>
   );
 }
