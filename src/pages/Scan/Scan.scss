@@ -1,6 +1,8 @@
 .webcam {
   &__container {
     position: relative;
+    top: 10px;
+    max-height: 100vh;
   }
 
   &__overlay {
