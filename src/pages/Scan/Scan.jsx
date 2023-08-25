@@ -11,7 +11,7 @@ import { useNavigate } from "react-router";
 const videoConstraints = {
   facingMode: { exact: "environment" }, //toggle "user" "environment"
   // width: window.innerWidth,
-  // height: window.innerHeight,
+  height: window.innerHeight,
 };
 
 function Scan() {
