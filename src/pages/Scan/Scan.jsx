@@ -10,7 +10,7 @@ import { useState } from "react";
 const videoConstraints = {
   facingMode: { exact: "environment" }, //toggle "user" "environment"
   // width: 428,
-  // height: 926,
+  height: window.innerHeight,
 };
 
 function Scan() {
@@ -29,7 +29,14 @@ function Scan() {
     <>
       <div className="webcam__container">
         <Webcam videoConstraints={videoConstraints} />
-        <div className="webcam__overlay" onClick={() => simulateScan()}>
+        <div
+          className={
+            showProduct
+              ? "webcam__overlay"
+              : " webcam__overlay webcam__overlay--hidden"
+          }
+          onClick={() => simulateScan()}
+        >
           <ShoppingCart quantity={numScans} />
           <div className="webcam__center-imgs">
             <img className="webcam__circle" src={cameraCircle} alt="" />
