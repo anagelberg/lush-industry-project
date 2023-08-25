@@ -17,6 +17,10 @@ function Scan() {
   const [numScans, setNumScans] = useState(0);
   const [showProduct, setShowProduct] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const simulateScan = () => {
     setNumScans((prev) => prev + 1);
     setShowProduct(true);
