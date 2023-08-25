@@ -15,7 +15,8 @@
 
 .button-absolute {
   position: absolute;
+  @include flex-center;
   bottom: 30%;
-  width: 351px;
+  width: 100%;
   text-align: center;
 }
