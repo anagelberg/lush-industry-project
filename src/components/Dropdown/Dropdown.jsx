@@ -45,3 +45,18 @@ const Dropdown = ({ title, items }) => {
 };
 
 export default Dropdown;
+
+// Example Dropdowns
+// <Dropdown
+//   title="Select Items"
+//   items={["Item 1", "Item 2", "Item 3"]}
+// />
+// <Dropdown
+//   title="Select Items"
+//   items={["Item 1", "Item 2", "Item 3"]}
+// />
+// <Dropdown
+//   title="Select Items"
+//   items={["Item 1", "Item 2", "Item 3"]}
+// />
+// </div>
