@@ -3,14 +3,23 @@
 @use "../../styles/mixins" as *;
 
 .btn {
-  height: 48px;
-  width: 228px;
   @include flex-center;
+  width: 351px;
+  height: 86px;
   border-radius: 0;
+  padding: 20px 40px;
+  gap: 40px;
   background-color: $black;
-  color: white;
+
   border: 1px solid black;
-  font-size: 12px;
+
+  color: #fff;
+  font-family: Helvetica Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
   text-transform: uppercase;
   //uppercase
   $transition: $transition;
@@ -28,10 +37,7 @@
     }
   }
 
-  &__text-hide {
-    display: none;
-    @include tablet {
-      display: flex;
-    }
+  &__text {
+    width: 58%;
   }
 }

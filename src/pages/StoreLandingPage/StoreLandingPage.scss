@@ -1,0 +1,57 @@
+.title {
+  text-align: center;
+  padding: 4rem 0rem;
+  &__text {
+    font-family: Lush Handwritten WLat Bold;
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__image {
+    width: 195px;
+    height: 9px;
+    flex-shrink: 0;
+  }
+}
+
+.store-location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  &__image {
+    width: 23px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+  &__text {
+    color: #000;
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    padding: 0rem 1rem;
+  }
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
+    &__image{
+  width: 387px;
+  height: 258px;
+  flex-shrink: 0;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 6.0625rem 0rem;
+}
