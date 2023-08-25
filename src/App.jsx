@@ -10,9 +10,11 @@ import Scan from "./pages/Scan/Scan";
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppContent />
-    </BrowserRouter>
+    <div className="app">
+      <BrowserRouter>
+        <AppContent />
+      </BrowserRouter>
+    </div>
   );
 }
 
@@ -25,7 +27,7 @@ function AppContent() {
   }, [location.pathname]);
 
   return (
-    <>
+    <div className="app__content">
       <div className={showNav ? "show" : "hide"}>
         <Navbar />
       </div>
@@ -37,7 +39,7 @@ function AppContent() {
         <Route path="/confirmation" element={<ConfirmationPage />} />
         <Route path="/scan" element={<Scan />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
