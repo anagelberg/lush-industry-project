@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Dropdown.scss";
 import arrowdown from "../../assets/icons/down-light.svg";
-import heartIcon from "../../assets/icons/heart-dark.svg";
 
 const Dropdown = ({ title, items }) => {
   /* Note for elise -- chatGpt did this */
@@ -21,7 +20,7 @@ const Dropdown = ({ title, items }) => {
     <div className="dropdown">
       <div className="dropdown__title" onClick={toggleDropdown}>
         {title}
-        <img className="dropdown__arrow" src={arrowdown} alt="" />
+        <img className="dropdown__arrow" src={arrowdown} alt="arrow down" />
       </div>
       <div
         className={`dropdown__content ${
