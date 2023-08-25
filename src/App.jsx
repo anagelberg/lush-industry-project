@@ -23,7 +23,7 @@ function App() {
           <Button text="Example Button" />
         </div>
 
-        <Button onClick={() => setShowWebCam(true)} />
+        <Button onClick={() => setShowWebCam(true)} text="Scan item" />
         <div className={showWebcam ? "webcam" : "webcam webcam--hidden"}>
           <Webcam
             onClick={() => setShowWebCam(false)}
