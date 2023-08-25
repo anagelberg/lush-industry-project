@@ -8,9 +8,9 @@ import ShoppingCart from "../../components/ShoppingCart/ShoppingCart";
 import { useState } from "react";
 
 const videoConstraints = {
-  facingMode: { exact: "user" }, //toggle "user" "environment"
+  facingMode: { exact: "environment" }, //toggle "user" "environment"
   width: 428,
-  height: 926,
+  // height: 926,
 };
 
 function Scan() {
