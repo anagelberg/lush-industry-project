@@ -57,8 +57,8 @@
 .button {
   display: flex;
   justify-content: center;
-  margin-top: 6.0625rem;
-  margin-bottom: 6.0625rem;
+  // margin-top: 6.0625rem;
+  // margin-bottom: 6.0625rem;
   // padding: 6.0625rem 0rem;
   @include side-padding;
 }

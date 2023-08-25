@@ -11,6 +11,9 @@
 .checkout-item {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  margin: auto;
+
   &__image {
     width: 388px;
     height: 138px;
@@ -124,6 +127,7 @@
   height: 48px;
   display: flex;
   justify-content: center;
+  margin: auto;
   &__text {
     color: #000;
     text-align: center;
@@ -135,3 +139,47 @@
     letter-spacing: 1.5px;
   }
 }
+
+.quantity-wrapper {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__number {
+    border: 1px solid #757575;
+    padding: 6.5px 13px;
+    margin: 6.5px 13px;
+    color: #000;
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  &__addicon {
+    width: 16px;
+    height: 16px;
+  }
+  &__minusicon {
+    width: 16px;
+    height: 16px;
+  }
+  &__price {
+    color: #000;
+    text-align: right;
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding-left: 3rem;
+  }
+}
+
+
