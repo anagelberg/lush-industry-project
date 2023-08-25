@@ -42,7 +42,7 @@ function BasketPage() {
       </div>
       <div className="button">
         <Button
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/modal1")}
           text="REVIEW order with lush employee"
         />
       </div>

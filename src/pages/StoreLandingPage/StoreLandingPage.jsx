@@ -2,7 +2,8 @@
 
 // Camera will open on this page
 // When camera closes, link to Product Page
-
+import Webcam from "react-webcam";
+import { useState } from "react";
 import "./StoreLandingPage.scss";
 import Button from "../../components/Button/Button";
 import robsonPic from "../../assets/images/Robson-image.jpg";
@@ -45,7 +46,7 @@ function StoreLandingPage() {
 
       <div className="button">
         <Button
-          onClick={() => navigate("/basket")}
+          onClick={() => navigate("/scan")}
           text="SCAN your lush product"
           icon={cameraIcon}
         />

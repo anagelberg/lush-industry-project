@@ -5,7 +5,9 @@
 .navbar {
   background-color: black;
   width: 100%;
-  @include flex-center($justify-content: flex-start);
+  @include flex-center($justify-content: flex-start, $align-content: flex-end);
   height: $navbar-height;
+  padding-bottom: 1rem;
   @include side-padding;
+  z-index: 1;
 }

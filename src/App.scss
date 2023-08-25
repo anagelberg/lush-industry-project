@@ -8,10 +8,11 @@
   background-color: #f4f2f4;
 
   &__content {
+    width: 100vw;
     max-width: 430px;
-    min-width: 430px;
+    // min-width: 430px;
     background-color: white;
-    min-height: 100vh;
+    // min-height: 100vh;
     margin: auto;
     border: 1px solid black;
   }
@@ -27,4 +28,12 @@
 
 .hide {
   display: none;
+}
+
+.page-screenshot {
+  @include flex-center;
+  // position: relative;
+  margin-top: calc(-1 * $navbar-height);
+  z-index: -1;
+  // margin-top: 1.5rem;
 }
