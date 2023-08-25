@@ -7,7 +7,7 @@ function Button({ modifier, text, icon, ...buttonAttributes }) {
       {...buttonAttributes}
     >
       {icon && <img className="btn__icon" src={icon} alt="btn icon"></img>}
-      <div className={icon && "btn__text-hide"}>{text}</div>
+      <div className={icon && "btn__text"}>{text}</div>
     </button>
   );
 }
