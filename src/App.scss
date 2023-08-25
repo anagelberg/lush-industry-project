@@ -29,3 +29,11 @@
 .hide {
   display: none;
 }
+
+.page-screenshot {
+  @include flex-center;
+  // position: relative;
+  margin-top: calc(-1 * $navbar-height);
+  z-index: -1;
+  // margin-top: 1.5rem;
+}
