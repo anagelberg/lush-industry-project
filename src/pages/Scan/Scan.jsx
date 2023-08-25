@@ -9,8 +9,8 @@ import { useState } from "react";
 
 const videoConstraints = {
   facingMode: { exact: "environment" }, //toggle "user" "environment"
-  width: window.innerWidth,
-  height: window.innerHeight,
+  // width: window.innerWidth,
+  // height: window.innerHeight,
 };
 
 function Scan() {
