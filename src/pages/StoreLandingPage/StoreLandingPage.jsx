@@ -10,8 +10,10 @@ import robsonPic from "../../assets/images/Robson-image.jpg";
 import underdashImage from "../../assets/images/promo-underdash.svg";
 import locationIcon from "../../assets/icons/lush-icon-storelocator.svg";
 import cameraIcon from "../../assets/icons/camera.svg";
+import { useNavigate } from "react-router";
 
 function StoreLandingPage() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="title">
@@ -43,7 +45,11 @@ function StoreLandingPage() {
       </div>
 
       <div className="button">
-        <Button onClick="" text="SCAN your lush product" icon={cameraIcon} />
+        <Button
+          onClick={() => navigate("/scan")}
+          text="SCAN your lush product"
+          icon={cameraIcon}
+        />
       </div>
     </>
   );
