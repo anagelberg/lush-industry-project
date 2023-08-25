@@ -12,10 +12,10 @@ function App() {
       {/* <Navbar /> */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={StoreLandingPage} />
-          <Route path="/product" element={ProductPage} />
-          <Route path="/checkout" element={CheckoutPage} />
-          <Route path="/confirmation" element={ConfirmationPage} />
+          <Route path="/" element={<StoreLandingPage />} />
+          <Route path="/product" element={<ProductPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/confirmation" element={<ConfirmationPage />} />
         </Routes>
       </BrowserRouter>
     </>
