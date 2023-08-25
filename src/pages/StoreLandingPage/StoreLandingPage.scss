@@ -1,3 +1,7 @@
+@use "../../styles/typefaces" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
 .title {
   text-align: center;
   padding: 4rem 0rem;
@@ -40,18 +44,21 @@
 }
 
 .hero {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0rem;
-    &__image{
-  width: 387px;
-  height: 258px;
-  flex-shrink: 0;
-    }
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+  &__image {
+    width: 387px;
+    height: 258px;
+    flex-shrink: 0;
+  }
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    padding: 6.0625rem 0rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 6.0625rem;
+  margin-bottom: 6.0625rem;
+  // padding: 6.0625rem 0rem;
+  @include side-padding;
 }
