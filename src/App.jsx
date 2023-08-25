@@ -8,6 +8,10 @@ import { useState } from "react";
 import exampleImg from "./assets/images/exampleImage.jpg";
 import Webcam from "react-webcam";
 
+const videoConstraints = {
+  facingMode: { exact: "environment" },
+};
+
 function App() {
   const [showWebcam, setShowWebCam] = useState(false);
   return (
@@ -21,7 +25,10 @@ function App() {
 
         <Button onClick={() => setShowWebCam(true)} />
         <div className={showWebcam ? "webcam" : "webcam webcam--hidden"}>
-          <Webcam onClick={() => setShowWebCam(false)} />
+          <Webcam
+            onClick={() => setShowWebCam(false)}
+            videoConstraints={videoConstraints}
+          />
         </div>
 
         <div className="example">
