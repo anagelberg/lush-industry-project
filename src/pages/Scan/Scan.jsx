@@ -9,7 +9,7 @@ import { useState } from "react";
 
 const videoConstraints = {
   facingMode: { exact: "environment" }, //toggle "user" "environment"
-  // width: 428,
+  width: window.innerWidth,
   height: window.innerHeight,
 };
 
