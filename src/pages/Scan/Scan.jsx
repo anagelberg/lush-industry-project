@@ -5,7 +5,7 @@ import cameraCircle from "../../assets/icons/camera-circle.svg";
 import productPopup from "../../assets/icons/product-popup.svg";
 import ShoppingCart from "../../components/ShoppingCart/ShoppingCart";
 // import shoppingCart from "../../assets/icons/shopping-cart-black.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const videoConstraints = {
   facingMode: { exact: "environment" }, //toggle "user" "environment"
