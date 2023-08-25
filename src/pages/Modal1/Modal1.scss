@@ -1,0 +1,21 @@
+@use "../../styles/typefaces" as *;
+@use "../../styles/typefaces" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.absolute-container {
+  position: relative;
+}
+
+.password-container {
+  position: absolute;
+  @include flex-center;
+  gap: 1rem;
+}
+
+.button-absolute {
+  position: absolute;
+  bottom: 30%;
+  width: 351px;
+  text-align: center;
+}

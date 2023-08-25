@@ -33,10 +33,22 @@
     color: $black;
   }
 
+  &:disabled {
+    background-color: #a0a0a0;
+  }
+
   &--secondary {
+    border: none;
+    height: 54px;
+    font-size: 14px;
+    @include flex-center;
+
     //secondary styles
+    background-color: #3cb043;
     &:hover:enabled {
-      background-color: inherit;
+      background-color: white;
+      color: black;
+      outline: 1px solid black;
     }
   }
   &__icon {
