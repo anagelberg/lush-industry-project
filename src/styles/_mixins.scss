@@ -41,16 +41,6 @@
 @mixin side-padding {
   padding-left: $spacing-unit-sm;
   padding-right: $spacing-unit-sm;
-
-  @include tablet {
-    padding-left: $spacing-unit-med;
-    padding-right: $spacing-unit-med;
-  }
-
-  @include desktop {
-    padding-left: $spacing-unit-xxl;
-    padding-right: $spacing-unit-xxl;
-  }
 }
 
 @mixin bottom-padding {
