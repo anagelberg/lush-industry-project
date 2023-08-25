@@ -7,6 +7,7 @@ import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
 import ConfirmationPage from "./pages/ConfirmationPage/ConfirmationPage";
 import { useState, useEffect } from "react";
 import Scan from "./pages/Scan/Scan";
+import BasketPage from "./pages/BasketPage/BasketPage";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<StoreLandingPage />} />
         <Route path="/product" element={<ProductPage />} />
+        <Route path="/basket" element={<BasketPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/confirmation" element={<ConfirmationPage />} />
         <Route path="/scan" element={<Scan />} />

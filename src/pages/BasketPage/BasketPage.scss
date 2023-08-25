@@ -1,0 +1,137 @@
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  &__image {
+    width: 368px;
+    height: 73px;
+  }
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: center;
+  &__image {
+    width: 388px;
+    height: 138px;
+    flex-shrink: 0;
+  }
+}
+
+.title {
+  color: #000;
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.add-item {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  &__image {
+    width: 388px;
+    height: 75px;
+  }
+}
+
+.subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem 0rem 1.5rem;
+  &__text {
+    color: #000;
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  &__number {
+    color: #000;
+    text-align: right;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+.tax {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  &__text {
+    color: #000;
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  &__number {
+    color: #000;
+    text-align: right;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  &__text {
+    color: #000;
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+  }
+  &__number {
+    color: #000;
+    text-align: right;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem 1rem 1rem;
+}
+
+.checkout-note {
+  width: 344px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  &__text {
+    color: #000;
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+  }
+}
