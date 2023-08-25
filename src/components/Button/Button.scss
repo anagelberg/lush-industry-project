@@ -40,6 +40,7 @@
   &--secondary {
     border: none;
     height: 54px;
+    max-width: 70%;
     font-size: 14px;
     @include flex-center;
 
