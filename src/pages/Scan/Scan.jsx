@@ -21,6 +21,10 @@ function Scan() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    if (window.innerWidth > 600) {
+      alert("please view this app on mobile to see camera functionality");
+      navigate("/basket");
+    }
   }, []);
 
   const simulateScan = () => {
