@@ -9,18 +9,18 @@
   max-width: 100vw;
 
   &__content {
-    // width: 100vw;
-    // min-width: 100vw;
-    // max-width: 100vw;
-    max-width: 428px;
-    min-width: 428px;
-    // min-width: 100vw;
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
     overflow: hidden;
-    // min-width: 430px;
     background-color: white;
-    // min-height: 100vh;
     margin: auto;
     border: 1px solid black;
+
+    @include tablet {
+      max-width: 428px;
+      min-width: 428px;
+    }
   }
 }
 .webcam {
@@ -38,7 +38,6 @@
 
 .page-screenshot {
   @include flex-center;
-  // position: relative;
   margin-top: calc(-1 * $navbar-height);
   z-index: -1;
 
@@ -48,5 +47,4 @@
     width: 100%;
     height: 100%;
   }
-  // margin-top: 1.5rem;
 }
