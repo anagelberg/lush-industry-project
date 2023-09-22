@@ -1,4 +1,6 @@
-This app was built for a 24 hour hackathon through BrainStation & Partnered with Lush. The team consisted of UX/UI designers Grace Lee and Ning Tao, Data Scientists John Narvaez and Quentin Parrenin, and Web Developers Elise Li and Amy Nagelberg. 
+This app was built for a 24 hour hackathon through BrainStation & Partnered with Lush and won first place. 🏆
+
+The team consisted of UX/UI designers Grace Lee and Ning Tao, Data Scientists John Narvaez and Quentin Parrenin, and Web Developers Elise Li and Amy Nagelberg. 
 
 The goal of this project was to create an innovative point-of-sale system to replace existing in-store hardware using open source resources only. For our solution, we decided to demonstrate how LUSH lens could be repurposed for in-store shopping experience (where currently it only works for online orders). 
 
